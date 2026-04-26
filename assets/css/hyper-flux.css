@@ -1,0 +1,121 @@
+:root {
+      --primary-color: #00ff88;
+      --bg-dark: #0a0a0a;
+      --text-light: #ffffff;
+      --accent-glow: 0 0 15px rgba(0, 255, 136, 0.5);
+}
+
+body {
+      background-color: var(--bg-dark);
+      color: var(--text-light);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: radial-gradient(circle at center, #1a1a1a 0%, #0a0a0a 100%);
+}
+
+.login-container {
+      background: rgba(20, 20, 20, 0.95);
+      padding: 2.5rem;
+      border-radius: 20px;
+      border: 1px solid var(--primary-color);
+      box-shadow: var(--accent-glow), inset 0 0 10px rgba(0, 255, 136, 0.1);
+      width: 100%;
+      max-width: 420px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+}
+
+h1 {
+      color: var(--primary-color);
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      margin-bottom: 0.5rem;
+      font-size: 2rem;
+      text-shadow: var(--accent-glow);
+}
+
+p {
+      color: #888;
+      margin-bottom: 2rem;
+      font-size: 0.9rem;
+}
+
+.input-group {
+      margin-bottom: 1.5rem;
+      text-align: left;
+}
+
+label {
+      display: block;
+      font-size: 0.75rem;
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+}
+
+input {
+      width: 100%;
+      padding: 1rem;
+      background: #121212;
+      border: 1px solid #333;
+      border-radius: 8px;
+      color: white;
+      outline: none;
+      transition: 0.3s;
+      box-sizing: border-box;
+}
+
+input:focus {
+      border-color: var(--primary-color);
+      box-shadow: 0 0 10px rgba(0, 255, 136, 0.2);
+}
+
+.game-button {
+      background: var(--primary-color);
+      color: black;
+      border: none;
+      padding: 1.2rem;
+      width: 100%;
+      border-radius: 8px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: 0.4s;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: 1rem;
+}
+
+.game-button:hover {
+      box-shadow: var(--accent-glow);
+      transform: translateY(-2px);
+      background: #00e67a;
+}
+
+.signup-link {
+      display: inline-block;
+      margin-top: 2rem;
+      color: var(--primary-color);
+      text-decoration: none;
+      font-size: 0.85rem;
+      transition: 0.3s;
+}
+
+.signup-link:hover {
+      text-decoration: underline;
+      opacity: 0.8;
+}
+
+.error {
+      color: #ff4444;
+      font-size: 0.85rem;
+      margin-bottom: 1rem;
+      background: rgba(255, 68, 68, 0.1);
+      padding: 0.5rem;
+      border-radius: 5px;
+      border: 1px solid #ff4444;
+}
